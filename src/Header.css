@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.h1header {
+  font-family: Times, 'Times New Roman', serif;
+  font-size: 40px;
+  /* background-color: #edda05f9; */
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.Container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.List {
+  display: flex;
+  justify-content: center;
+}
+
+.List li {
+  padding: 10px;
+}
+
+.Buttoms {
+  display: flex;
+  justify-content: center;
+}
+
+.Buttoms li {
+  padding: 10px;
+}
+
+.buttom-img {
+  width: 40px;
+}
+
+.store {
+  list-style: none;
+  cursor: pointer;
+}
+
+.profile {
+  list-style: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.search {
+  list-style: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.Lebas {
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1b1a1a;
+  cursor: pointer;
+}
+
+.Kafsh {
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1b1a1a;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.Jadid {
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1b1a1a;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.text {
+  text-decoration: none;
+}

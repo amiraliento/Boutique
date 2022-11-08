@@ -21,7 +21,10 @@ const Home = () => {
         />
       </div>
 
-      <hr />
+      <div className="newstyle">
+        <img className="newstyleimg" src="./img/Jadid.jpg" />
+      </div>
+
       <div className="container1">
         <div>
           <img src="./img/shoesh.jpg" />
@@ -47,6 +50,18 @@ const Home = () => {
           <span className="textimg">سویشرت</span>
         </div>
       </div>
+
+      <div>
+        <img className="Set1" src="./img/Set1.jpg" />
+        <img className="Set2" src="./img/Set2.jpg" />
+      </div>
+
+      <br />
+
+      <div className="morestyle">
+        <img className="morestyle" src="./img/more.jpg" />
+      </div>
+      <br />
 
       <hr />
       <Footer />

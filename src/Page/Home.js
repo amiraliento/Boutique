@@ -1,6 +1,6 @@
 import "../Home.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "../Component/Footer";
 import Header from "../Component/Header";
@@ -21,33 +21,45 @@ const Home = () => {
         />
       </div>
 
-      <div className="newstyle">
+      <div className="jstyle">
         <img className="newstyleimg" src="./img/Jadid.jpg" />
       </div>
 
       <div className="container1">
+
         <div>
           <img src="./img/shoesh.jpg" />
+          <Link to={"Shoes"}>
           <span className="textimg">کفش</span>
+          </Link>
         </div>
 
         <div>
           <img src="./img/Pantsh.jpg" />
+          <Link to={"Pants"}>
           <span className="textimg">شلوار</span>
+          </Link>
         </div>
+
         <div>
           <img src="./img/tshirth.jpg" />
-          <span className="textimg">تیشرت</span>
+          <Link to={"Tshirt"}>
+            <span className="textimg">تیشرت</span>
+          </Link>
         </div>
 
         <div>
           <img src="./img/shirth.jpg" />
-          <span className="textimg">پیراهن</span>
+          <Link to={"Clothing"}>
+            <span className="textimg">پیراهن</span>
+          </Link>
         </div>
 
         <div>
           <img src="./img/sweatshirth.jpg" />
-          <span className="textimg">سویشرت</span>
+          <Link to={"Sweatshirt"}>
+            <span className="textimg">سویشرت</span>
+          </Link>
         </div>
       </div>
 
@@ -59,7 +71,9 @@ const Home = () => {
       <br />
 
       <div className="morestyle">
-        <img className="morestyle" src="./img/more.jpg" />
+        <Link to={'MoreSet'}>
+        <span className="txtm">+ست های بیشتر</span>
+        </Link>
       </div>
       <br />
 

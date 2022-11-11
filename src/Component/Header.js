@@ -2,7 +2,6 @@ import "../Header.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import LoginForm from "../Page/LoginForm";
 
 const Header = () => {
   return (
@@ -15,7 +14,7 @@ const Header = () => {
           <Link className="text" to={"/Shoes"}>
             <li className="Kafsh">کفش</li>
           </Link>
-          <Link className="text" to={"/Clothing"}>
+          <Link className="text" to={"/AllCloth"}>
             <li className="Lebas">لباس</li>
           </Link>
         </ul>

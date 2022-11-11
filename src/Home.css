@@ -81,15 +81,26 @@ body {
   margin-bottom: 30px;
 }
 
-.newstyle {
-  flex-direction: column;
+.morestyle {
+  text-decoration: underline;     
+  font-family: cursive;
+  padding: 30px 30px 30px 30px;
+  background-color: #cfd918f0;
+  size-adjust: 40px;
+}
+
+.txtm {
+  color: #000000;
+  font-size: 20px;
+}
+
+.jstyle {
   display: flex;
   justify-content: center;
-  height: 30vh;
-  display: flex;
-  margin: auto;
-  width: 70%;
+  border-radius: 100px;
+  cursor: pointer;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .newstyleimg {

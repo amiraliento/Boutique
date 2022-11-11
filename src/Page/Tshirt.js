@@ -2,20 +2,15 @@ import "../AllList.css";
 import React from "react";
 import { useUserContext } from "../UserContext";
 
-const Clothing = () => {
-  // const {db} = useContext(UserContext);
-  // console.log(db.ListClothing)
 
-  // روش اول
-  const { ListClothing } = useUserContext();
-  // console.log(ListClothing);
-
+const Tshirt = () => {
+  const { ListTshirt } = useUserContext();
   return (
     <div className="clothContainer">
-      {ListClothing.map((info) => {
+      {ListTshirt.map((info) => {
         return (
           <div className="clothCart">
-            <img className="imgstyle" src={info.img} />
+           <img className="imgstyle" src={info.img} />
             <h1>{info.name}</h1>
             <span>{info.sale}</span>
           </div>
@@ -25,4 +20,4 @@ const Clothing = () => {
   );
 };
 
-export default Clothing;
+export default Tshirt;

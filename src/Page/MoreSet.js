@@ -1,19 +1,17 @@
 import "../AllList.css";
 import React from "react";
 import { useUserContext } from "../UserContext";
-
-const Shoes = () => {
+const MoreSet = () => {
  
-  const { ListShoes } = useUserContext();
+  const { MoreSet } = useUserContext();
 
   return (
     <div className="clothContainer">
-      {ListShoes.map((info) => {
+      {MoreSet.map((info) => {
         return (
           <div className="clothCart">
-           <img className="imgstyle" src={info.img} />
-            <h1>{info.name}</h1>
-            <span>{info.sale}</span>
+           <img  className="mimg" src={info.img} />
+
           </div>
         );
       })}
@@ -21,4 +19,4 @@ const Shoes = () => {
   );
 };
 
-export default Shoes;
+export default MoreSet;

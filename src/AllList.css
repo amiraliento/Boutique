@@ -1,0 +1,27 @@
+.clothContainer {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.clothCart {
+  box-shadow: 0 5px 5px #000000b0;
+  transition: 0.5s;
+  width: 350px;
+  margin: 20px 40px 30px 60px;
+  border-radius: 30px;
+  border: 2px solid #eeeeee;
+  cursor: pointer;
+}
+
+.clothCart:hover {
+  box-shadow: 1px 3px 20px 5px #333334;
+  transition: 0.5s;
+}
+
+.mimg {
+  width: 300px;
+}

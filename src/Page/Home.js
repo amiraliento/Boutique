@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <div className="img1-div">
         <img
@@ -26,18 +26,17 @@ const Home = () => {
       </div>
 
       <div className="container1">
-
         <div>
           <img src="./img/shoesh.jpg" />
           <Link to={"Shoes"}>
-          <span className="textimg">کفش</span>
+            <span className="textimg">کفش</span>
           </Link>
         </div>
 
         <div>
           <img src="./img/Pantsh.jpg" />
           <Link to={"Pants"}>
-          <span className="textimg">شلوار</span>
+            <span className="textimg">شلوار</span>
           </Link>
         </div>
 
@@ -71,8 +70,8 @@ const Home = () => {
       <br />
 
       <div className="morestyle">
-        <Link to={'MoreSet'}>
-        <span className="txtm">+ست های بیشتر</span>
+        <Link to={"MoreSet"}>
+          <span className="txtm">+ست های بیشتر</span>
         </Link>
       </div>
       <br />

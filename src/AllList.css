@@ -25,3 +25,35 @@
 .mimg {
   width: 300px;
 }
+
+.addCart {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #f6ee0b;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.addCart:hover {
+  background-color: #b61212;
+}
+
+.storeCart {
+  box-shadow: 0 5px 5px #000000b0;
+  transition: 0.5s;
+  width: 350px;
+  margin: 20px 40px 30px 60px;
+  border-radius: 30px;
+  border: 2px solid #eeeeee;
+  cursor: pointer;
+}
+
+.storeCart:hover {
+  box-shadow: 1px 3px 10px 2px #333334;
+  transition: 0.1s;
+}
+
+.titleCart {
+  text-align: right;
+  margin-right: 50px;
+}

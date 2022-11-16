@@ -2,17 +2,28 @@ import "../AllList.css";
 import React from "react";
 import { useUserContext } from "../UserContext";
 
-
 const Tshirt = () => {
-  const { ListTshirt } = useUserContext();
+  const { data, setData } = useUserContext();
+
+  const addtoCart = (info) => {
+    const clone = { ...data };
+    clone.cart.push(info);
+    setData(clone);
+  };
+
   return (
     <div className="clothContainer">
-      {ListTshirt.map((info) => {
+      {data.ListTshirt.map((info) => {
         return (
-          <div className="clothCart">
-           <img className="imgstyle" src={info.img} />
-            <h1>{info.name}</h1>
-            <span>{info.sale}</span>
+          <div>
+            <div className="clothCart">
+              <img className="imgstyle" src={info.img} />
+              <h1>{info.name}</h1>
+              <span>{info.sale}</span>
+            </div>
+            <button className="addCart" onClick={() => addtoCart(info)}>
+              افزودن به سبد خرید
+            </button>
           </div>
         );
       })}

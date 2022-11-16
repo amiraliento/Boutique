@@ -3,17 +3,27 @@ import React from "react";
 import { useUserContext } from "../UserContext";
 
 const Shoes = () => {
- 
-  const { ListShoes } = useUserContext();
+  const { data, setData } = useUserContext();
+
+  const addtoCart = (info) => {
+    const clone = { ...data };
+    clone.cart.push(info);
+    setData(clone);
+  };
 
   return (
     <div className="clothContainer">
-      {ListShoes.map((info) => {
+      {data.ListShoes.map((info) => {
         return (
-          <div className="clothCart">
-           <img className="imgstyle" src={info.img} />
-            <h1>{info.name}</h1>
-            <span>{info.sale}</span>
+          <div>
+            <div className="clothCart">
+              <img className="imgstyle" src={info.img} />
+              <h1>{info.name}</h1>
+              <span>{info.sale}</span>
+            </div>
+            <button className="addCart" onClick={() => addtoCart(info)}>
+              افزودن به سبد خرید
+            </button>
           </div>
         );
       })}

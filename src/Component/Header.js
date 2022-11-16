@@ -23,9 +23,12 @@ const Header = () => {
 
       <div>
         <ul className="Buttoms">
+<Link to={"/Cart"}>
           <li className="store">
             <img className="buttom-img" src="./img/storeimg.png" />
           </li>
+</Link>
+
           <li className="profile">
             <Link to={"/LoginForm"}>
               <img className="buttom-img" src="./img/profileimg.png" />

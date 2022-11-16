@@ -2,16 +2,14 @@ import "../AllList.css";
 import React from "react";
 import { useUserContext } from "../UserContext";
 const MoreSet = () => {
- 
-  const { MoreSet } = useUserContext();
+  const { data } = useUserContext();
 
   return (
     <div className="clothContainer">
-      {MoreSet.map((info) => {
+      {data.MoreSet.map((info) => {
         return (
           <div className="clothCart">
-           <img  className="mimg" src={info.img} />
-
+            <img className="mimg" src={info.img} />
           </div>
         );
       })}

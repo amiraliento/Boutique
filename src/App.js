@@ -15,15 +15,16 @@ import Tshirt from "./Page/Tshirt";
 import Pants from "./Page/Pants";
 import AllCloth from "./Page/AllCloth";
 import MoreSet from "./Page/MoreSet";
+import Cart from "./Component/Cart";
 
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
-
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/Cart" element={<Cart />} />
           <Route exact path="/LoginForm" element={<LoginForm />} />
           <Route exact path="/SignUpForm" element={<SignUpForm />} />
           <Route exact path="/Sweatshirt" element={<Sweatshirt />} />
